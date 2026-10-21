@@ -69,11 +69,3 @@ Aplikasi Android serbaguna berbasis **Kotlin 2.0+** dan **Jetpack Compose** untu
 * **Background Keep-Alive:** Android Foreground Service (`FOREGROUND_SERVICE_CONNECTED_DEVICE`) untuk Android 14+
 * **Local Storage:** Room Database & Jetpack DataStore
 
----
-
-## 📂 Cara Membuka Proyek di Android Studio
-
-1. Buka **Android Studio** (Koala / Ladybug atau versi terbaru yang mendukung AGP 8.7+).
-2. Pilih **Open** -> Navigasikan ke folder `D:\PROJECT CODING\BLUEHUB`.
-3. Biarkan Android Studio menyelesaikan Gradle Sync pertama kali.
-4. Hubungkan perangkat Android fisik atau jalankan di Emulator (disarankan perangkat fisik dengan Bluetooth aktif untuk pengujian perangkat keras).
