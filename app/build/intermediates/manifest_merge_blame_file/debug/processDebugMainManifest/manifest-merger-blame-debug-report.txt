@@ -1,0 +1,231 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.bluehub.app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <!-- Bluetooth Hardware Requirements -->
+12    <uses-feature
+12-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:6:5-8:35
+13        android:name="android.hardware.bluetooth"
+13-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:7:9-50
+14        android:required="true" />
+14-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:8:9-32
+15    <uses-feature
+15-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:9:5-11:36
+16        android:name="android.hardware.bluetooth_le"
+16-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:10:9-53
+17        android:required="false" />
+17-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:11:9-33
+18
+19    <!-- Legacy Bluetooth Permissions (Android <= 11) -->
+20    <uses-permission
+20-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:14:5-16:38
+21        android:name="android.permission.BLUETOOTH"
+21-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:15:9-52
+22        android:maxSdkVersion="30" />
+22-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:16:9-35
+23    <uses-permission
+23-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:17:5-19:38
+24        android:name="android.permission.BLUETOOTH_ADMIN"
+24-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:18:9-58
+25        android:maxSdkVersion="30" />
+25-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:19:9-35
+26    <uses-permission
+26-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:20:5-22:38
+27        android:name="android.permission.ACCESS_FINE_LOCATION"
+27-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:21:9-63
+28        android:maxSdkVersion="30" />
+28-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:22:9-35
+29    <uses-permission
+29-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:23:5-25:38
+30        android:name="android.permission.ACCESS_COARSE_LOCATION"
+30-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:24:9-65
+31        android:maxSdkVersion="30" />
+31-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:25:9-35
+32
+33    <!-- Modern Bluetooth Permissions (Android 12+, API 31+) -->
+34    <uses-permission
+34-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:28:5-31:31
+35        android:name="android.permission.BLUETOOTH_SCAN"
+35-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:29:9-57
+36        android:usesPermissionFlags="neverForLocation" />
+36-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:30:9-55
+37    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+37-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:32:5-33:63
+37-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:33:9-60
+38    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+38-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:34:5-35:65
+38-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:35:9-62
+39
+40    <!-- Foreground Service & Notifications (Android 13+ / 14+) -->
+41    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+41-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:38:5-77
+41-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:38:22-74
+42    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
+42-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:39:5-94
+42-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:39:22-91
+43    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+43-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:40:5-77
+43-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:40:22-74
+44
+45    <permission
+45-->[androidx.core:core:1.13.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\c2401d25eddf93a32797a283a71c8946\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+46        android:name="com.bluehub.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+46-->[androidx.core:core:1.13.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\c2401d25eddf93a32797a283a71c8946\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+47        android:protectionLevel="signature" />
+47-->[androidx.core:core:1.13.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\c2401d25eddf93a32797a283a71c8946\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+48
+49    <uses-permission android:name="com.bluehub.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+49-->[androidx.core:core:1.13.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\c2401d25eddf93a32797a283a71c8946\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+49-->[androidx.core:core:1.13.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\c2401d25eddf93a32797a283a71c8946\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+50
+51    <application
+51-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:42:5-73:19
+52        android:name="com.bluehub.app.BlueHubApplication"
+52-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:43:9-43
+53        android:allowBackup="true"
+53-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:44:9-35
+54        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+54-->[androidx.core:core:1.13.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\c2401d25eddf93a32797a283a71c8946\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+55        android:dataExtractionRules="@xml/data_extraction_rules"
+55-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:45:9-65
+56        android:debuggable="true"
+57        android:extractNativeLibs="false"
+58        android:fullBackupContent="@xml/backup_rules"
+58-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:46:9-54
+59        android:icon="@mipmap/ic_launcher"
+59-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:47:9-43
+60        android:label="@string/app_name"
+60-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:48:9-41
+61        android:roundIcon="@mipmap/ic_launcher_round"
+61-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:49:9-54
+62        android:supportsRtl="true"
+62-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:50:9-35
+63        android:testOnly="true"
+64        android:theme="@style/Theme.BlueHub" >
+64-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:51:9-45
+65        <activity
+65-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:54:9-64:20
+66            android:name="com.bluehub.app.MainActivity"
+66-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:55:13-41
+67            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+67-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:57:13-133
+68            android:exported="true"
+68-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:56:13-36
+69            android:theme="@style/Theme.BlueHub"
+69-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:59:13-49
+70            android:windowSoftInputMode="adjustResize" >
+70-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:58:13-55
+71            <intent-filter>
+71-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:60:13-63:29
+72                <action android:name="android.intent.action.MAIN" />
+72-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:61:17-69
+72-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:61:25-66
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+74-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:62:17-77
+74-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:62:27-74
+75            </intent-filter>
+76        </activity>
+77
+78        <!-- Background Bluetooth Connection Service for IoT & Keep-Alive -->
+79        <service
+79-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:67:9-71:63
+80            android:name="com.bluehub.app.core.service.BluetoothForegroundService"
+80-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:68:13-68
+81            android:enabled="true"
+81-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:69:13-35
+82            android:exported="false"
+82-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:70:13-37
+83            android:foregroundServiceType="connectedDevice" />
+83-->D:\PROJECT CODING\BLUEHUB\app\src\main\AndroidManifest.xml:71:13-60
+84
+85        <provider
+85-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\7e25366cf911ed8464f1eaba29ebbf2d\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+86            android:name="androidx.startup.InitializationProvider"
+86-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\7e25366cf911ed8464f1eaba29ebbf2d\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+87            android:authorities="com.bluehub.app.androidx-startup"
+87-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\7e25366cf911ed8464f1eaba29ebbf2d\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+88            android:exported="false" >
+88-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\7e25366cf911ed8464f1eaba29ebbf2d\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+89            <meta-data
+89-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\7e25366cf911ed8464f1eaba29ebbf2d\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+90                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+90-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\7e25366cf911ed8464f1eaba29ebbf2d\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+91                android:value="androidx.startup" />
+91-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\7e25366cf911ed8464f1eaba29ebbf2d\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+92            <meta-data
+92-->[androidx.lifecycle:lifecycle-process:2.8.6] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\3c0b638f9531ad9ef74ac3ab19ce3fb4\transformed\lifecycle-process-2.8.6\AndroidManifest.xml:29:13-31:52
+93                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+93-->[androidx.lifecycle:lifecycle-process:2.8.6] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\3c0b638f9531ad9ef74ac3ab19ce3fb4\transformed\lifecycle-process-2.8.6\AndroidManifest.xml:30:17-78
+94                android:value="androidx.startup" />
+94-->[androidx.lifecycle:lifecycle-process:2.8.6] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\3c0b638f9531ad9ef74ac3ab19ce3fb4\transformed\lifecycle-process-2.8.6\AndroidManifest.xml:31:17-49
+95            <meta-data
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+96                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+97                android:value="androidx.startup" />
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+98        </provider>
+99
+100        <activity
+100-->[androidx.compose.ui:ui-tooling-android:1.7.4] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\2067de842926bd59984029dfa74605b5\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+101            android:name="androidx.compose.ui.tooling.PreviewActivity"
+101-->[androidx.compose.ui:ui-tooling-android:1.7.4] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\2067de842926bd59984029dfa74605b5\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+102            android:exported="true" />
+102-->[androidx.compose.ui:ui-tooling-android:1.7.4] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\2067de842926bd59984029dfa74605b5\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+103
+104        <service
+104-->[androidx.room:room-runtime:2.6.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\62a1ab5252acc5e960ecfce9dc089665\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+105            android:name="androidx.room.MultiInstanceInvalidationService"
+105-->[androidx.room:room-runtime:2.6.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\62a1ab5252acc5e960ecfce9dc089665\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+106            android:directBootAware="true"
+106-->[androidx.room:room-runtime:2.6.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\62a1ab5252acc5e960ecfce9dc089665\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+107            android:exported="false" />
+107-->[androidx.room:room-runtime:2.6.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\62a1ab5252acc5e960ecfce9dc089665\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+108
+109        <receiver
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+110            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+111            android:directBootAware="false"
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+112            android:enabled="true"
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+113            android:exported="true"
+113-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+114            android:permission="android.permission.DUMP" >
+114-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+115            <intent-filter>
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+116                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+117            </intent-filter>
+118            <intent-filter>
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+119                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+120            </intent-filter>
+121            <intent-filter>
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+122                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+123            </intent-filter>
+124            <intent-filter>
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+125                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALGIFARY\.gradle\caches\8.9\transforms\db1f8ccb679d821a9d19aca524486875\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+126            </intent-filter>
+127        </receiver>
+128    </application>
+129
+130</manifest>

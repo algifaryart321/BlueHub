@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Bluetooth Symbol -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M51.5,24 L56.5,24 L56.5,49 L68,38 L72,42 L57.5,54 L72,66 L68,70 L56.5,59 L56.5,84 L51.5,84 L51.5,60.5 L40,70 L36.5,66 L50.5,54 L36.5,42 L40,38 L51.5,47.5 Z M56.5,33 L56.5,48 L64,41 Z M56.5,60 L56.5,75 L64,67 Z" />
+</vector>

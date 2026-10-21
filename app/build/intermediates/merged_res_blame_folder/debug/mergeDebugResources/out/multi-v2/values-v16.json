@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.bluehub.app-mergeDebugResources-66:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ALGIFARY\\.gradle\\caches\\8.9\\transforms\\6e989758868614d5f326a9f2a0e06fea\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    }
+                }
+            ]
+        }
+    ]
+}
