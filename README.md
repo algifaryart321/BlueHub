@@ -4,6 +4,21 @@ Aplikasi Android serbaguna berbasis **Kotlin 2.0+** dan **Jetpack Compose** untu
 
 ---
 
+## 📥 Download APK
+
+[![Download APK](https://img.shields.io/github/v/release/algifaryart321/BlueHub?label=Download%20APK&style=for-the-badge&logo=android&color=0D47A1)](https://github.com/algifaryart321/BlueHub/releases/latest)
+
+👉 **[Download BlueHub versi terbaru](https://github.com/algifaryart321/BlueHub/releases/latest)**
+
+**Cara install:**
+1. Buka halaman [Releases](https://github.com/algifaryart321/BlueHub/releases/latest), lalu download file `BlueHub-v1.0.0.apk` di bagian **Assets**.
+2. Buka file APK di HP, lalu izinkan **"Instal dari sumber tidak dikenal"** jika diminta.
+3. Ketuk **Instal**.
+
+**Kebutuhan:** Android 8.0 ke atas (sudah diuji di Android 14, target Android 15).
+
+---
+
 ## 🚀 Fitur Utama
 
 1. **Bluetooth Discovery & Scanner**:
