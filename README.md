@@ -19,6 +19,14 @@ Aplikasi Android serbaguna berbasis **Kotlin 2.0+** dan **Jetpack Compose** untu
 
 ---
 
+## 📱 Tampilan Aplikasi (Screenshots)
+
+| Splash Screen | Halaman Utama | Pilih Kategori | Scan Periferal | Scan Smarthome |
+| :---: | :---: | :---: | :---: | :---: |
+| <img src="screenshots/01_splash.jpg" width="160" alt="Splash Screen"/> | <img src="screenshots/02_home.jpg" width="160" alt="Halaman Utama"/> | <img src="screenshots/03_categories.jpg" width="160" alt="Pilih Kategori"/> | <img src="screenshots/04_scanner_peripheral.jpg" width="160" alt="Scan Periferal"/> | <img src="screenshots/05_scanner_smarthome.jpg" width="160" alt="Scan Smarthome"/> |
+
+---
+
 ## 🚀 Fitur Utama
 
 1. **Bluetooth Discovery & Scanner**:
